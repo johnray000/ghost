@@ -60,7 +60,7 @@ function createConfig() {
     storage: storage,
     database: {
       client: "mongo",
-      connectionString: "mongodb+srv://johndick:14650493@prueba-13-feb.1peldb2.mongodb.net/?retryWrites=true&w=majority"
+      connectionString: process.env.URI
     },
     server: {
       host: "0.0.0.0",
